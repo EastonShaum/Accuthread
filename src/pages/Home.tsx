@@ -1,7 +1,12 @@
+import "./pages.css"
+
 function HomePage () {
     return(
         <div className="container text-center">
             Home
+            <div id="rcorners1">
+                
+            </div>
             <div className="row">
                 <div className="col">
                     Column 1

@@ -10,6 +10,13 @@ import NavBar from './components/Header/NavBar';
 
 import NoMatch from './pages/error404';
 import HomePage from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import Commercial from './pages/Commercial';
+import ContactUs from './pages/ContactUs';
+import Engineering from './pages/Engineering';
+import Industrial from './pages/Industrial';
+import Military from './pages/Military';
+
 
 function App() {
   return (
@@ -20,10 +27,17 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/Home" element={<HomePage />}></Route>
-          <Route path="*" element={<NoMatch/>}></Route>
-          
+          <Route path="/AboutUs" element={<AboutUs />}></Route>
+          <Route path="/Commercial" element={<Commercial />}></Route>
+          <Route path="/ContactUs" element={<ContactUs />}></Route>
+          <Route path="/Engineering" element={<Engineering />}></Route>
+          <Route path="/Industrial" element={<Industrial />}></Route>
+          <Route path="/Military" element={<Military />}></Route>
+          <Route path="*" element={<NoMatch/>}></Route>       
         </Route>
       </Routes>
+
+      
       </div>
     </>
   )
@@ -33,11 +47,7 @@ function App() {
 function Layout() {
   return (
   <div>
-    <nav>
-      <p>
-      This is the content
-      </p>
-    </nav>
+    <Outlet />
   </div>
   )
 }

@@ -1,11 +1,14 @@
-import "./pages.css"
+import "./pages.css";
+
+import BallScrewimg from "../assets/ball-screw-stock.jpg"
 
 function HomePage () {
     return(
         <div className="container text-center">
-            Home
             <div id="rcorners1">
-                
+                <div className="rcornersImg">
+                    <img className="img-fluid rcornersImg" src={BallScrewimg}></img>
+                </div>                
             </div>
             <div className="row">
                 <div className="col">

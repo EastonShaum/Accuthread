@@ -1,0 +1,13 @@
+#footer {
+    background-color: black;
+    color: white;
+}
+
+#footer.container {
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}

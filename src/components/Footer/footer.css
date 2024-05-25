@@ -8,6 +8,11 @@
     width: 100%;
     max-width: none;
     min-height: 300px;
-    display: flex;
+    display: grid;
     align-items: center;
+}
+
+a {
+    color: white !important;
+    text-decoration: none !important;
 }

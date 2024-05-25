@@ -10,3 +10,11 @@
 img {
     border-radius: 25px;
 }
+
+.imgRow {
+  align-content: center;
+}
+
+#mainContentRow {
+  padding: 50px;
+}

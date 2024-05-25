@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./nav.css";
 
@@ -6,7 +6,7 @@ import "./nav.css";
 function NavBar () {
     return (
         <div>
-            <nav className="nav-div">
+            <nav id="nav" className="nav-div">
                 <div className="container text-center ">
                     <div className="row justify-content-around ">
                         <div className="col-1">

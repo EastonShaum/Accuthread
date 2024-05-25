@@ -7,3 +7,10 @@
 .align-items {
     align-items: center;
 }
+
+#nav * {
+    font-weight: 500;
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-size: 25px;
+  }

@@ -15,8 +15,8 @@
 
 a {
   font-weight: 500;
-  color: #000000 !important;
-  text-decoration: none !important;
+  color: #000000;
+  text-decoration: none ;
 }
 a:hover {
   color: #2e37fe !important;

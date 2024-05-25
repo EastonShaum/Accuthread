@@ -1,10 +1,18 @@
+import { Link } from "react-router-dom";
+
 import "./footer.css"
 
 function Footer () {
     return (
         <div id="footer" className="container">
-            <div className="row">
-                <div className="col">
+            <div className="row justify-content-md-center">
+                <div className="col-2">
+                    Get a quote
+                </div>
+                <div className="col-2">
+                    <Link to="/AboutUs">AboutUs</Link>
+                </div>
+                <div className="col-2">
                     Accuthread Ball Screw
                 </div>
             </div>

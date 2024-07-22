@@ -1,10 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 
 import NavBar from './components/Header/NavBar';
 import Footer from './components/Footer/Footer';
@@ -23,7 +20,8 @@ function App() {
   return (
     <>
       <div>
-        {/* <NavBar/>
+        <div style={{display: "none"}}>
+         <NavBar/>
       
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -38,7 +36,8 @@ function App() {
           </Route>
         </Routes>
 
-        <Footer/> */}
+        <Footer/>
+        </div>
         <div style={{margin: "25%"}}>
           <h1>Accuthread Ballscrew Company</h1>
           <br/>

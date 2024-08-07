@@ -15,10 +15,14 @@ img {
   align-content: center;
 }
 
+.gif {
+  width: 45%;
+  height: auto;
+}
+
 #mainContentRow {
   padding: 50px;
 }
-
 
 .center {
   position: absolute;
@@ -29,4 +33,16 @@ img {
 
 .centerV {
   padding: 5% 0% 5% 0%;
+}
+
+.formText {
+  text-align: start;
+}
+
+.mb-3 {
+  margin-top: 1rem !important;
+}
+
+.formTitle {
+  justify-self: center;
 }

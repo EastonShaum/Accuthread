@@ -16,10 +16,10 @@ function NavBar () {
                         </div>
                         <div className="col-1"></div>
                         <div className="col-2">
-                        <Link to="/Commercial">Commercial</Link>
+                        <Link to="/Aerospace">Aerospace</Link>
                         </div>
                         <div className="col-2">
-                        <Link to="/Industrial">Industrial</Link>
+                        <Link to="/Commercial">Commercial</Link>
                         </div>
                         <div className="col-2">
                         <Link to="/Military">Military</Link>

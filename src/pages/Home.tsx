@@ -1,6 +1,8 @@
 import "./pages.css";
 
 import Carousel  from "react-bootstrap/Carousel";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 
 import BallScrewimg from "../assets/ball-screw-stock.jpg";
@@ -30,7 +32,7 @@ function HomePage () {
                     <div className="center">
                         <div style={{width: "75%", margin: "auto"}}>
                             <h1>Welcome to Accuthread</h1>
-                            <h2>Where precision meets innovation. With over 100 years of combined experience in Ball Screw design and manufacturing, our team stands at the forefront of the industry, bringing unparalleled expertise and dedication to every project.</h2>
+                            <h2>Where precision meets innovation. With over 35 years of combined experience in Ball Screw design and manufacturing, our team stands at the forefront of the industry, bringing unparalleled expertise and dedication to every project.</h2>
                         </div>
                     </div> 
                 </div>             
@@ -47,7 +49,7 @@ function HomePage () {
             <div id="mainContentRow" className="row justify-content-md-center">
                <div className="col-5 centerV">
                     <h2>Trusted by Customers</h2>
-                    <p>From our state-of-the-art facility in the USA, we proudly serve a diverse and extensive customer base spanning the globe. Our commitment to quality and customer satisfaction has earned us a reputation for excellence in the industry.</p>
+                    <p>Quality is paramount, but we understand that speed and reliability are equally crucial. By combining superior craftsmanship with rapid turnaround times, Accuthread stands as a trusted partner for all your ball screw needs. Whether you're working on a complex engineering project or require standard components, you can count on us for precision, speed, and reliability.</p>
                 </div>
                 <div className="col-5 imgRow">
                     <img className="img-fluid " src={ScrewOnDisplay}></img>
@@ -63,9 +65,46 @@ function HomePage () {
                     <p>At Accuthread, we blend time-honored craftsmanship with cutting-edge technology to provide solutions that meet the evolving needs of our clients. Discover how our passion for precision can help drive your success.</p>
                 </div>                              
             </div>
-            {/* <div id="mainContentRow" className="row justify-content-md-center">
-                <input></input>
-            </div> */}
+            <div className="row justify-content-md-center formText">
+                <div className="col-7 formTitle">
+                    <h2>Repair Request</h2>
+                </div>
+                <div className="col-7 centerV">
+                    <Form>
+                        <Form.Group>
+                            <Form.Label className="mb-3 " controlId="formBasicContactName">Contact Name</Form.Label>
+                            <Form.Control type="text" placeholder="Contact Name"></Form.Control>
+                        </Form.Group>
+
+                        <Form.Group>
+                            <Form.Label className="mb-3 " controlId="formBasicCompanyName">Company Name</Form.Label>
+                            <Form.Control type="text" placeholder="Company Name"></Form.Control>
+                        </Form.Group>
+
+                        <Form.Group>
+                            <Form.Label className="mb-3 " controlId="formBasicEmail">Email Address</Form.Label>
+                            <Form.Control type="email" placeholder="Email Address"></Form.Control>
+                            <Form.Text className="text-muted">We will never share your email with anyone else.</Form.Text>
+                        </Form.Group>
+
+                        <Form.Group>
+                            <Form.Label className="mb-3 " controlId="formBasicPhone">Phone</Form.Label>
+                            <Form.Control type="phone" placeholder="Phone"></Form.Control>
+                        </Form.Group>
+
+                        <Form.Group controlId="formFile" className="mb-3">
+                            <Form.Label>File upload</Form.Label>
+                            <Form.Control type="file" />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                            <Form.Check type="checkbox" label="Check this box if you would like expedited services at an additional rate" />
+                        </Form.Group>
+
+                        <Button type="submit">Submit</Button>
+                    </Form>
+                </div>
+            </div>
         </div>
     );
 }

@@ -1,8 +1,8 @@
 import "./pages.css";
 
 import Carousel  from "react-bootstrap/Carousel";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+
+import RepairRequestForm from "../components/Forms/BasicForm";
 
 
 import BallScrewimg from "../assets/ball-screw-stock.jpg";
@@ -65,46 +65,7 @@ function HomePage () {
                     <p>At Accuthread, we blend time-honored craftsmanship with cutting-edge technology to provide solutions that meet the evolving needs of our clients. Discover how our passion for precision can help drive your success.</p>
                 </div>                              
             </div>
-            <div className="row justify-content-md-center formText">
-                <div className="col-7 formTitle">
-                    <h2>Repair Request</h2>
-                </div>
-                <div className="col-7 centerV">
-                    <Form>
-                        <Form.Group>
-                            <Form.Label className="mb-3 " controlId="formBasicContactName">Contact Name</Form.Label>
-                            <Form.Control type="text" placeholder="Contact Name"></Form.Control>
-                        </Form.Group>
-
-                        <Form.Group>
-                            <Form.Label className="mb-3 " controlId="formBasicCompanyName">Company Name</Form.Label>
-                            <Form.Control type="text" placeholder="Company Name"></Form.Control>
-                        </Form.Group>
-
-                        <Form.Group>
-                            <Form.Label className="mb-3 " controlId="formBasicEmail">Email Address</Form.Label>
-                            <Form.Control type="email" placeholder="Email Address"></Form.Control>
-                            <Form.Text className="text-muted">We will never share your email with anyone else.</Form.Text>
-                        </Form.Group>
-
-                        <Form.Group>
-                            <Form.Label className="mb-3 " controlId="formBasicPhone">Phone</Form.Label>
-                            <Form.Control type="phone" placeholder="Phone"></Form.Control>
-                        </Form.Group>
-
-                        <Form.Group controlId="formFile" className="mb-3">
-                            <Form.Label>File upload</Form.Label>
-                            <Form.Control type="file" />
-                        </Form.Group>
-
-                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Check this box if you would like expedited services at an additional rate" />
-                        </Form.Group>
-
-                        <Button type="submit">Submit</Button>
-                    </Form>
-                </div>
-            </div>
+            <RepairRequestForm/>
         </div>
     );
 }

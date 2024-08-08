@@ -1,7 +1,7 @@
 import './App.css'
 
 
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route, Outlet, useLocation } from "react-router-dom";
 
 import NavBar from './components/Header/NavBar';
 import Footer from './components/Footer/Footer';
@@ -15,18 +15,23 @@ import ContactUs from './pages/ContactUs';
 import Engineering from './pages/Engineering';
 import Industrial from './pages/Industrial';
 import Military from './pages/Military';
+import PlaceHolder from './pages/PlaceHolder';
 
 
 function App() {
+  const location = useLocation();
+
+  console.log(location);
   return (
     <>
       <div>
         <div style={{}}>
-         <NavBar/>
-      
+        {location.pathname === '/' ? <div></div> : <NavBar/> } 
+             
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<HomePage />}></Route>
+            <Route index element={<PlaceHolder />}></Route>
+            <Route path="/Home" element={<HomePage />}></Route>
             <Route path="/AboutUs" element={<AboutUs />}></Route>
             <Route path="/Aerospace" element={<Aerospace />}></Route>
             <Route path="/Commercial" element={<Commercial />}></Route>
@@ -38,14 +43,7 @@ function App() {
           </Route>
         </Routes>
 
-        <Footer/>
-        </div>
-        <div style={{margin: "25%", display: "none"}}>
-          <h1>Accuthread Ballscrew Company</h1>
-          <br/>
-          <h5>A Ballscrew Manufacturing Company with State of the Art Equipment & with over 35 years experience making the highest quality ballscrews in both industrial and aviation spaces. </h5>
-          <br/>
-          <h3>Website coming soon</h3>
+        {location.pathname === '/' ? <div></div> : <Footer/> }
         </div>
       </div>
     </>

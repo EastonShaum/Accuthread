@@ -12,7 +12,7 @@ function NavBar () {
                 <div className="container text-center">
                     <div className="row justify-content-around align-items-center">
                         <div className="col-1">
-                            <Link to="/"><img className="img-fluid" src={logo}></img></Link>
+                            <Link to="/Home"><img className="img-fluid" src={logo}></img></Link>
                         </div>
                         <div className="col-1"></div>
                         <div className="col-2">

@@ -6,13 +6,13 @@ function Footer () {
     return (
         <div id="footer" className="container">
             <div className="row justify-content-md-center">
-                <div className="col-2">
+                <div className="col-md-2">
                     Get a quote
                 </div>
-                <div className="col-2">
+                <div className="col-md-2">
                     <Link to="/AboutUs">AboutUs</Link>
                 </div>
-                <div className="col-2">
+                <div className="col-md-2">
                     Accuthread Ball Screw
                 </div>
             </div>

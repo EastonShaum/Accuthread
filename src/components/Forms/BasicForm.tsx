@@ -7,10 +7,10 @@ import InputGroup from 'react-bootstrap/InputGroup';
 function RepairRequestForm () {
     return(
         <div className="row justify-content-md-center formText">
-                <div className="col-7 formTitle">
+                <div className="col-md-7 formTitle">
                     <h2>Repair Request</h2>
                 </div>
-                <div className="col-7 centerV">
+                <div className="col-md-7 centerV">
                     <Form>
                         <Form.Group>
                             <Form.Label className="mb-3 " controlid="formBasicContactName">Contact Name</Form.Label>

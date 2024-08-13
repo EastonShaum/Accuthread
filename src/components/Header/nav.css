@@ -14,3 +14,25 @@
     text-decoration: none !important;
     font-size: 25px;
   }
+
+.nav-full {
+    display: block;
+} 
+
+.nav-burger {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-full {
+        display: none;
+    }
+    .nav-burger {
+        display: block;
+    }
+}
+
+.nav-img {
+    max-width: 100%;
+    width: 45%
+}

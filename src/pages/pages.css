@@ -46,3 +46,10 @@ img {
 .formTitle {
   justify-self: center;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #mainContentRow {
+    padding: 20px;
+  }
+}

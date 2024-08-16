@@ -47,9 +47,41 @@ img {
   justify-self: center;
 }
 
+#carouselText {
+  width: 75%;
+  margin: auto;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #mainContentRow {
     padding: 20px;
   }
+
+  img {
+    border-radius: 25px;
+    height: 40vh;
+  }
+
+  .center {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center; 
+  }
+
+  #carouselText {
+    width: 90%;
+    margin: auto;
+    font-size: x-large;
+  }
+
+  #carouselText>h1 {
+    font-size: x-large;
+  }
+
+  #carouselText>h2 {
+    font-size: large;
+  }
+  
 }

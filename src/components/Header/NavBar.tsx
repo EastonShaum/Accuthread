@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 import "./nav.css";
 
@@ -40,7 +39,7 @@ function NavBar() {
                 </div>
             </nav> */}
             <nav>
-                <Navbar key={'md'} expand={'md'} className="bg-body-tertiary mb-3 ">
+                <Navbar key={'md'} expand={'md'} className="bg-body mb-3 ">
                     <Container fluid>
                         <Nav.Link href="#/Home">
                             <img className="img-fluid nav-img" src={logo}></img>

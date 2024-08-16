@@ -19,18 +19,18 @@ function HomePage () {
                 <div style={{position: "relative"}}>
                     <Carousel>            
                         <Carousel.Item>
-                            <img src={ScrewMachineing} style={{opacity: "0.7"}} className="d-block w-100" ></img>
+                            <img src={ScrewMachineing} style={{opacity: "0.5"}} className="d-block w-100" ></img>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img src={ScrewCloseUp} style={{opacity: "0.7"}} className="d-block w-100" />
+                            <img src={ScrewCloseUp} style={{opacity: "0.5"}} className="d-block w-100" />
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img src={ScrewWithLeadShift} style={{opacity: "0.7"}} className="d-block w-100" ></img>
+                            <img src={ScrewWithLeadShift} style={{opacity: "0.5"}} className="d-block w-100" ></img>
                         </Carousel.Item>
                                                
                     </Carousel>
                     <div className="center">
-                        <div style={{width: "75%", margin: "auto"}}>
+                        <div id="carouselText" >
                             <h1>Welcome to Accuthread</h1>
                             <h2>Where precision meets innovation. With over 35 years of combined experience in Ball Screw design and manufacturing, our team stands at the forefront of the industry, bringing unparalleled expertise and dedication to every project.</h2>
                         </div>

@@ -74,7 +74,7 @@ function RepairRequestForm () {
     return(
         <div id="formDiv" className="row justify-content-md-center formText">
                 <div className="col-md-7 formTitle">
-                    <h2>Repair Request</h2>
+                    <h2>Request a Quote</h2>
                 </div>
                 <div className="col-md-7 centerV">
                     <Form>

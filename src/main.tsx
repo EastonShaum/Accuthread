@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       minBreakpoint="xxs"
       >
         <App />
-      </ThemeProvider>;
+      </ThemeProvider>
     </HashRouter>
   </React.StrictMode>,
 )

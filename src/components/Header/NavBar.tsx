@@ -39,21 +39,22 @@ function NavBar() {
                 </div>
             </nav> */}
             <nav>
-                <Navbar key={'md'} expand={'md'} className="bg-body mb-3 ">
+                <Navbar fixed="top" collapseOnSelect key={'md'} expand={'md'} className="bg-body mb-0">
                     <Container fluid>
+                    <Navbar.Toggle aria-controls={`basic-navbar-nav`} />
                         <Nav.Link href="#/Home">
                             <img className="img-fluid nav-img" src={logo}></img>
                             {/* <div>AccuThread</div> */}
                         </Nav.Link>
-                        <Navbar.Toggle aria-controls={`basic-navbar-nav`} />
+                        
                         <Navbar.Collapse id={`basic-navbar-nav`}>
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="#/Home">Home</Nav.Link>
-                                <Nav.Link href="#/Aerospace">Aerospace</Nav.Link>
-                                <Nav.Link href="#/Commercial">Commercial</Nav.Link>
-                                <Nav.Link href="#/Military">Military</Nav.Link>
-                                <Nav.Link href="#/Engineering">Engineering</Nav.Link>
-                                <Nav.Link href="#/AboutUs">AboutUs</Nav.Link>
+                            <Nav variant="underline" className="justify-content-end flex-grow-1 pe-3">
+                                <Nav.Link className="navText" href="#/Home">Home</Nav.Link>
+                                <Nav.Link className="navText" href="#/Aerospace">Aerospace</Nav.Link>
+                                <Nav.Link className="navText" href="#/Commercial">Commercial</Nav.Link>
+                                <Nav.Link className="navText" href="#/Military">Military</Nav.Link>
+                                <Nav.Link className="navText" href="#/Engineering">Engineering</Nav.Link>
+                                <Nav.Link className="navText" href="#/AboutUs">About Us</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

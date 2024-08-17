@@ -4,7 +4,13 @@
     padding: 20px;
     width: 100%;
     align-content: center;
+    display: block
   }
+
+#fullwidthcarousel {
+    display: none;
+    padding: -24px;
+}
 
 img {
     border-radius: 25px;
@@ -52,10 +58,26 @@ img {
   margin: auto;
 }
 
+body {
+  margin-top: 225px !important;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #mainContentRow {
     padding: 20px;
+  }
+
+  #rcorners1 {
+    display: none;
+  }
+
+  #fullwidthcarousel {
+    display: block
+  }
+  /* remove round corners from carousel images */
+  .d-block {
+    border-radius: 0px !important;
   }
 
   img {
@@ -83,5 +105,11 @@ img {
   #carouselText>h2 {
     font-size: large;
   }
+
+  body {
+    margin-top: 170px !important;
+  }
   
 }
+
+

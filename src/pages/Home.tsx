@@ -14,6 +14,29 @@ import ScrewBallDark from "../assets/screwballdark.jpeg"
 
 function HomePage () {
     return(
+        <>
+        <div id="fullwidthcarousel" >
+                <div style={{position: "relative"}}>
+                    <Carousel>            
+                        <Carousel.Item>
+                            <img src={ScrewMachineing} style={{opacity: "0.5"}} className="d-block w-100" ></img>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img src={ScrewCloseUp} style={{opacity: "0.5"}} className="d-block w-100" />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img src={ScrewWithLeadShift} style={{opacity: "0.5"}} className="d-block w-100" ></img>
+                        </Carousel.Item>
+                                               
+                    </Carousel>
+                    <div className="center">
+                        <div id="carouselText" >
+                            <h1>Welcome to Accuthread</h1>
+                            <h2>Where precision meets innovation. With over 35 years of combined experience in Ball Screw design and manufacturing, our team stands at the forefront of the industry, bringing unparalleled expertise and dedication to every project.</h2>
+                        </div>
+                    </div> 
+                </div>
+            </div>
         <div className="container text-center">
             <div id="rcorners1" className="container">
                 <div style={{position: "relative"}}>
@@ -35,7 +58,7 @@ function HomePage () {
                             <h2>Where precision meets innovation. With over 35 years of combined experience in Ball Screw design and manufacturing, our team stands at the forefront of the industry, bringing unparalleled expertise and dedication to every project.</h2>
                         </div>
                     </div> 
-                </div>             
+                </div>
             </div>
             <div id="mainContentRow" className="row justify-content-md-center">
                 <div className="col-md-6 imgRow">
@@ -67,6 +90,7 @@ function HomePage () {
             </div>
             <RepairRequestForm/>
         </div>
+        </>
     );
 }
 

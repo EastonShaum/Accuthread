@@ -21,7 +21,6 @@ import PlaceHolder from './pages/PlaceHolder';
 function App() {
   const location = useLocation();
 
-  console.log(location);
   return (
     <>
       <div>

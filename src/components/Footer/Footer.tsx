@@ -11,27 +11,27 @@ function Footer () {
                     <a href="formDiv">Get a quote</a>
                 </div> */}
                 <div className="col-md-2">
-                    <Link id="footerLink" to="/AboutUs">AboutUs</Link>
+                    <Link id="footerLink" to="/AboutUs">About Us</Link>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
                     <h4>
-                    Accuthread Ball Screw
+                    Accuthread Ballscrew
                     </h4>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
                     <h5>
-                    2828 Diesel Park DrSaginaw, MI 48601, United States
+                    2828 Diesel Park Dr <br/>Saginaw, MI 48601<br/> United States
                     </h5>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
                     <h5>
-                    989-498-6707
+                    +1 (989) 498-6707
                     </h5>
                 </div>
             </div>

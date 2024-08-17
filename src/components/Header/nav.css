@@ -23,6 +23,31 @@
     display: none;
 }
 
+.nav-img {
+    max-width: 100%;
+    width: 250px;
+}
+
+.navText {
+    font-size: x-large !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navText {
+        font-size: large !important;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .navText {
+        font-size: medium !important;
+    }
+
+}
+
+
+
 @media only screen and (max-width: 768px) {
     .nav-full {
         display: none;
@@ -30,9 +55,10 @@
     .nav-burger {
         display: block;
     }
+    .nav-img {
+        max-width: 100%;
+        width: 190px;       
+    }
+
 }
 
-.nav-img {
-    max-width: 100%;
-    width: 45%
-}

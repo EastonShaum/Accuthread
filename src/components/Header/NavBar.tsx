@@ -4,40 +4,20 @@ import "./nav.css";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { NavHashLink } from 'react-router-hash-link';
 
 import logo from "../../assets/accuthread Vector 200-80-png1.2.png";
 
 function NavBar() {
+    const scrollWithOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -200; 
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+    }
+
+
     return (
         <div>
-            {/* <nav id="nav" className="nav-div nav-full">
-                <div className="container text-center">
-                    <div className="row justify-content-around align-items-center">
-                        <div className="col-1">
-                            <Link to="/Home">
-                                <img className="img-fluid" src={logo}></img>
-                            </Link>
-                        </div>
-                        <div className="col-1"></div>
-                        <div className="col-2">
-                            <Link to="/Aerospace">Aerospace</Link>
-                        </div>
-                        <div className="col-2">
-                            <Link to="/Commercial">Commercial</Link>
-                        </div>
-                        <div className="col-2">
-                            <Link to="/Military">Military</Link>
-                        </div>
-                        <div className="col-2">
-                            <Link to="/Engineering">Engineering</Link>
-                        </div>
-                        <div className="col-1"></div>
-                        <div className="col-1">
-                            <Link to="/AboutUs">AboutUs</Link>
-                        </div>
-                    </div>
-                </div>
-            </nav> */}
             <nav>
                 <Navbar fixed="top" collapseOnSelect key={'md'} expand={'md'} className="bg-body mb-0">
                     <Container fluid>
@@ -54,13 +34,13 @@ function NavBar() {
                                 <Nav.Link className="navText" href="#/Commercial">Commercial</Nav.Link>
                                 <Nav.Link className="navText" href="#/Military">Military</Nav.Link>
                                 <Nav.Link className="navText" href="#/Engineering">Engineering</Nav.Link>
-                                <Nav.Link className="navText" href="#/AboutUs">About Us</Nav.Link>
+                                <NavHashLink className="nav-link navText quoteLink" to="#QuoteForm" scroll={scrollWithOffset}>Get a Quote</NavHashLink>
+                                {/* <Nav.Link className="navText" href="#/AboutUs">About Us</Nav.Link> */}
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
             </nav>
-
         </div>
     );
 }

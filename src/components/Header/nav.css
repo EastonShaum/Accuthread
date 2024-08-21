@@ -25,11 +25,17 @@
 
 .nav-img {
     max-width: 100%;
-    width: 250px;
+    width: 200px;
 }
 
 .navText {
     font-size: x-large !important;
+    color: #224EA0 !important;
+}
+
+.quoteLink {
+    color: white !important;
+    background-color: #009FB7!important;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -46,8 +52,6 @@
 
 }
 
-
-
 @media only screen and (max-width: 768px) {
     .nav-full {
         display: none;
@@ -57,7 +61,7 @@
     }
     .nav-img {
         max-width: 100%;
-        width: 190px;       
+        width: 150px;       
     }
 
 }

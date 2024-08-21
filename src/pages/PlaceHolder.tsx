@@ -1,7 +1,8 @@
-
+import "./placeholder.css";
 
 function PlaceHolder () {
     return(
+      <>
         <div style={{margin: "25%"}}>
           <h1>Accuthread Ballscrew Company</h1>
           <br/>
@@ -9,6 +10,7 @@ function PlaceHolder () {
           <br/>
           <h3>Website coming soon</h3>
         </div>
+      </>
     )
 }
 

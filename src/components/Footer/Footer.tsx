@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import "./footer.css"
 
@@ -10,9 +10,9 @@ function Footer () {
                     <Link id="footerLink" to='#formDiv'><a href="formDiv">Get a quote</a></Link>
                     <a href="formDiv">Get a quote</a>
                 </div> */}
-                <div className="col-md-2">
+                {/* <div className="col-md-2">
                     <Link id="footerLink" to="/AboutUs">About Us</Link>
-                </div>
+                </div> */}
             </div>
             <div className="row">
                 <div className="col">

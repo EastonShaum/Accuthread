@@ -1,4 +1,9 @@
-#rcorners1 {
+body {
+  margin-top: 170px !important;
+  background-color: #DDDDDD !important;
+}
+
+.rcorners1 {
     border-radius: 25px;
     background: #F2F2F4;
     padding: 20px;
@@ -7,14 +12,17 @@
     display: block
   }
 
+#WebCarousel {
+  display: block;
+}
+
 #fullwidthcarousel {
-    display: none;
-    padding: -24px;
+  display: none;
 }
 
 img {
-    border-radius: 25px;
-    height: 85vh;
+  border-radius: 25px;
+  height: 85vh;
 }
 
 .imgRow {
@@ -38,7 +46,7 @@ img {
 }
 
 .centerV {
-  padding: 5% 0% 5% 0%;
+  padding: 0% 0% 5% 0%;
 }
 
 .formText {
@@ -58,9 +66,6 @@ img {
   margin: auto;
 }
 
-body {
-  margin-top: 225px !important;
-}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -68,7 +73,7 @@ body {
     padding: 20px;
   }
 
-  #rcorners1 {
+  #WebCarousel {
     display: none;
   }
 
@@ -107,7 +112,7 @@ body {
   }
 
   body {
-    margin-top: 170px !important;
+    margin-top: 140px !important;
   }
   
 }

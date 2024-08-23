@@ -1,5 +1,5 @@
 body {
-  margin-top: 170px !important;
+  margin-top: 165px !important;
   background-color: #DDDDDD !important;
 }
 
@@ -45,9 +45,7 @@ img {
   text-align: center; 
 }
 
-.centerV {
-  padding: 0% 0% 5% 0%;
-}
+
 
 .formText {
   text-align: start;
@@ -112,7 +110,7 @@ img {
   }
 
   body {
-    margin-top: 140px !important;
+    margin-top: 110px !important;
   }
   
 }

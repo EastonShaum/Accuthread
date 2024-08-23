@@ -62,7 +62,7 @@ function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div id="mainContentRow" className="row justify-content-md-center">
+                <div id="mainContentRow" className="row justify-content-md-center align-items-center">
                     <div className="col-md-6 imgRow">
                         <img className="img-fluid" src={BallScrewimg}></img>
                     </div>
@@ -71,7 +71,7 @@ function HomePage() {
                         <p>Our journey began with the legacy of the Saginaw Ball Screw Company. Specializing in the design and manufacture of precision ground ball screws, we are committed to delivering products that exceed the highest standards of accuracy and performance.</p>
                     </div>
                 </div>
-                <div id="mainContentRow" className="row justify-content-md-center">
+                <div id="mainContentRow" className="row justify-content-md-center align-items-center">
                     <div className="col-md-6 imgRow">
                         <img className="img-fluid " src={ScrewOnDisplay}></img>
                     </div>
@@ -80,7 +80,7 @@ function HomePage() {
                         <p>Quality is paramount, but we understand that speed and reliability are equally crucial. By combining superior craftsmanship with rapid turnaround times, Accuthread stands as a trusted partner for all your ball screw needs. Whether you're working on a complex engineering project or require standard components, you can count on us for precision, speed, and reliability.</p>
                     </div>
                 </div>
-                <div id="mainContentRow" className="row justify-content-md-center">
+                <div id="mainContentRow" className="row justify-content-md-center align-items-center">
                     <div className="col-md-6 imgRow">
                         <img className="img-fluid " src={ScrewBallDark}></img>
                     </div>

@@ -40,11 +40,11 @@ const sendEmail = (details) => {
         .catch((error) => {
             console.log(error);
         });
-} 
+}
 
 
 
-function RepairRequestForm () {
+function RepairRequestForm() {
     const [details, setDetails] = useState({
         contact_name: "",
         company_name: "",
@@ -57,7 +57,7 @@ function RepairRequestForm () {
     });
 
     const handleDetailsChange = (update) => {
-        const {name , value} = update.target;
+        const { name, value } = update.target;
 
         setDetails((prevDetails) => {
             return {
@@ -71,8 +71,9 @@ function RepairRequestForm () {
         sendEmail(details);
     }
 
-    return(
-        <div id="formDiv" className="row justify-content-md-center formText">
+    return (
+        <div className="container my-4">
+            <div id="formDiv" className="row justify-content-md-center formText">
                 <div className="col-md-7 formTitle">
                     <h2>Request a Quote</h2>
                 </div>
@@ -100,16 +101,16 @@ function RepairRequestForm () {
                         </Form.Group>
 
                         <Form.Group>
-                            <Form.Label className="mb-3 " controlid="formBasicRequestedService">Requested Service</Form.Label> 
-                            <Form.Control as="select" type="select" onChange={handleDetailsChange} name="requested_service" id="requested_service" required>                  
+                            <Form.Label className="mb-3 " controlid="formBasicRequestedService">Requested Service</Form.Label>
+                            <Form.Control as="select" type="select" onChange={handleDetailsChange} name="requested_service" id="requested_service" required>
                                 <option value="">Select One</option>
                                 <option value="NewDesign">New Design</option>
                                 <option value="EngineeringSupport">Engineering Support</option>
                                 <option value="Rebuild/Repair">Rebuild/Repair</option>
                                 <option value="Build Existing Design">Build Existing Design</option>
                                 <option value="Other">Other</option>
-                            </Form.Control> 
-                        </Form.Group>                          
+                            </Form.Control>
+                        </Form.Group>
 
                         <Form.Group>
                             <Form.Label className="mb-3">Please provide any details regarding your project for our engineering team</Form.Label>
@@ -117,18 +118,19 @@ function RepairRequestForm () {
                             {/* <Form.Control type="file" onChange={handleDetailsChange} name="files" id="files" /> */}
                         </Form.Group>
 
-                        <Form.Group>    
+                        <Form.Group>
                             <Form.Label className="mb-3 " controlid="formBasicRequestedService">Is your project time sensitive?  If so, what is the required deadline?</Form.Label>
-                            <InputGroup>                        
+                            <InputGroup>
                                 <InputGroup.Checkbox aria-label="Checkbox for following text input" onChange={handleDetailsChange} name="is_time_sensitive" id="is_time_sensitive" />
                                 <Form.Control aria-label="Text input with checkbox" onChange={handleDetailsChange} name="deadline_date" id="deadline_date" />
                             </InputGroup>
                         </Form.Group>
-                        <br/>
+                        <br />
                         <Button disabled={!details.company_name || !details.contact_name || !details.email_address || !details.phone || !details.requested_service} onClick={handleSendEmail}>Submit</Button>
                     </Form>
                 </div>
             </div>
+        </div>
     );
 }
 

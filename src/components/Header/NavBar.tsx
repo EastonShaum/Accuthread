@@ -24,7 +24,6 @@ function NavBar() {
                     <Navbar.Toggle aria-controls={`basic-navbar-nav`} />
                     <Nav.Link href="#/Home">
                         <img className="img-fluid nav-img" src={logo2}></img>
-                        {/* <div>AccuThread</div> */}
                     </Nav.Link>
 
                     <Navbar.Collapse id={`basic-navbar-nav`}>

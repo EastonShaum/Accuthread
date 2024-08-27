@@ -2,7 +2,7 @@
 
 import "./footer.css"
 
-function Footer () {
+function Footer() {
     return (
         <div id="footer" className="container">
             <div className="row justify-content-md-center">
@@ -17,21 +17,23 @@ function Footer () {
             <div className="row">
                 <div className="col">
                     <h4>
-                    Accuthread Ballscrew
+                        Accuthread Ballscrew
                     </h4>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
                     <h5>
-                    2828 Diesel Park Dr <br/>Saginaw, MI 48601<br/> United States
+                        <a className="addressLink" href="http://maps.google.com/?q=2828 Diesel Park Dr Saginaw, MI 48601 United States">
+                            2828 Diesel Park Dr <br />Saginaw, MI 48601<br /> United States
+                        </a>
                     </h5>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
                     <h5>
-                    +1 (989) 498-6707
+                        +1 (989) 498-6707
                     </h5>
                 </div>
             </div>

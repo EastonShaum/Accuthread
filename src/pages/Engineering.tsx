@@ -1,6 +1,15 @@
+
+import { HashLink } from 'react-router-hash-link';
+
 import BallScrewGif from "../assets/ball-screw-animation.gif";
 
 function Engineering() {
+
+    const scrollWithOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -200;
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+    }
     return (
         <div className="container">
             <div id="" className="container rcorners1">
@@ -104,6 +113,11 @@ function Engineering() {
                             efficiency of your machinery. Partner with us to experience the
                             pinnacle of precision engineering and innovation.
                         </p>
+                    </div>
+                </div>
+                <div id="mainContentRow" className="row justify-content-md-center align-items-center">
+                    <div className="col-md-3 centerV">
+                        <HashLink className="nav-link navText quoteLink border border-black p-3" to="/Home#QuoteForm" scroll={scrollWithOffset}>Get a Quote!</HashLink>
                     </div>
                 </div>
             </div>

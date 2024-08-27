@@ -1,3 +1,13 @@
+.addressLink {
+    text-decoration: none;
+    color: white;
+}
+
+.addressLink:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
 #footer {
     background-color: #545555;
     color: white;

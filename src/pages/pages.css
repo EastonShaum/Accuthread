@@ -6,10 +6,10 @@ body {
 .rcorners1 {
     border-radius: 25px;
     background: #F2F2F4;
-    padding: 20px;
-    width: 100%;
+    padding: 12px;
     align-content: center;
-    display: block
+    display: block;
+    width: fit-content;
   }
 
 #WebCarousel {
@@ -22,7 +22,7 @@ body {
 
 img {
   border-radius: 25px;
-  height: 85vh;
+  width: 100vh;
 }
 
 .imgRow {

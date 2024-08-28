@@ -18,6 +18,11 @@ const sendEmail = (details) => {
             throttle: 100000,
         },
     });
+    if (details.is_time_sensitive == "on") {
+        details.is_time_sensitive = "Yes";
+    } else {
+        details.is_time_sensitive = "No";
+    }
     emailjs
         .send(
             import.meta.env.VITE_EMAIL_SERVICE_ID,
@@ -36,6 +41,7 @@ const sendEmail = (details) => {
         )
         .then((response) => {
             console.log(response);
+            window.location.href = "/#/ThankYou";
         })
         .catch((error) => {
             console.log(error);

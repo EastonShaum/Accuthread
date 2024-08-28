@@ -22,18 +22,18 @@ function NavBar() {
             <Navbar fixed="top" collapseOnSelect key={'md'} expand={'md'} className="mb-0 p-4">
                 <Container fluid>
                     <Navbar.Toggle aria-controls={`basic-navbar-nav`} />
-                    <Nav.Link href="#/Home">
+                    <Nav.Link href="/">
                         <img className="img-fluid nav-img" src={logo2}></img>
                     </Nav.Link>
 
                     <Navbar.Collapse id={`basic-navbar-nav`}>
                         <Nav variant="underline" className="justify-content-end flex-grow-1 pe-3">
-                            <Nav.Link className="navText" href="#/Home">Home</Nav.Link>
+                            <Nav.Link className="navText" href="/">Home</Nav.Link>
                             <Nav.Link className="navText" href="#/Aerospace">Aerospace</Nav.Link>
-                            <Nav.Link className="navText" href="#/Commercial">Commercial</Nav.Link>
-                            <Nav.Link className="navText" href="#/Military">Military</Nav.Link>
+                            {/* <Nav.Link className="navText" href="#/Commercial">Commercial</Nav.Link>
+                            <Nav.Link className="navText" href="#/Military">Military</Nav.Link> */}
                             <Nav.Link className="navText" href="#/Engineering">Engineering</Nav.Link>
-                            <NavHashLink className="nav-link navText quoteLink border border-black" to="home/#QuoteForm" scroll={scrollWithOffset}>Get a Quote</NavHashLink>
+                            <NavHashLink className="nav-link navText quoteLink border border-black" to="/#QuoteForm" scroll={scrollWithOffset}>Get a Quote</NavHashLink>
                             {/* <Nav.Link className="navText" href="#/AboutUs">About Us</Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>

@@ -117,7 +117,7 @@ function Engineering() {
                 </div>
                 <div id="mainContentRow" className="row justify-content-md-center align-items-center">
                     <div className="col-md-3 centerV">
-                        <HashLink className="nav-link navText quoteLink border border-black p-3" to="/Home#QuoteForm" scroll={scrollWithOffset}>Get a Quote!</HashLink>
+                        <HashLink className="nav-link navText quoteLink border border-black p-3" to="/#QuoteForm" scroll={scrollWithOffset}>Get a Quote!</HashLink>
                     </div>
                 </div>
             </div>
